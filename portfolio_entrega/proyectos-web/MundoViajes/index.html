@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mundo Viajes | Agencia de Viajes</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header id="inicio">
+
+        <div class="imagen-header">
+
+            <img src="imagenes/logoViajes.png" alt="Logo de Mundo Viajes">
+
+            <div class="texto-header">
+
+                <h1>Mundo Viajes</h1>
+
+                <p>Descubrí el mundo. Viví la aventura.</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVEGACIÓN -->
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#destinos">Destinos</a>
+                </li>
+
+                <li>
+                    <a href="#promociones">Promociones</a>
+                </li>
+
+                <li>
+                    <a href="#contacto-formulario">Contacto</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main>
+
+
+        <!-- DESTINOS -->
+
+        <section id="destinos" class="destinos">
+
+            <h2>Destinos destacados</h2>
+
+            <p class="introduccion">
+                Conocé algunos de los destinos más famosos del mundo
+                y comenzá a planificar tu próxima aventura.
+            </p>
+
+
+            <!-- CARRUSEL DE LUGARES -->
+            <div class="carrusel-lugares" aria-label="Galería de destinos">
+                <div class="carrusel-ventana">
+                    <div class="carrusel-pista" id="pista-carrusel">
+                        <figure class="diapositiva activa">
+                            <img src="imagenes/Francia.jpg" alt="Paisaje turístico de Francia">
+                            <figcaption><strong>París, Francia</strong><span>Arte, arquitectura y rincones inolvidables</span></figcaption>
+                        </figure>
+                        <figure class="diapositiva">
+                            <img src="imagenes/Japon.jpg" alt="Paisaje turístico de Japón">
+                            <figcaption><strong>Tokio, Japón</strong><span>Tradición y modernidad en una misma ciudad</span></figcaption>
+                        </figure>
+                        <figure class="diapositiva">
+                            <img src="imagenes/Italia.jpg" alt="Paisaje turístico de Italia">
+                            <figcaption><strong>Roma, Italia</strong><span>Historia, plazas y sabores únicos</span></figcaption>
+                        </figure>
+                        <figure class="diapositiva">
+                            <img src="imagenes/playa.png" alt="Playa paradisíaca para disfrutar las vacaciones">
+                            <figcaption><strong>Escapada a la playa</strong><span>Sol, mar y descanso</span></figcaption>
+                        </figure>
+                        <figure class="diapositiva">
+                            <img src="imagenes/montana.png" alt="Montañas y paisaje natural">
+                            <figcaption><strong>Aventura en la montaña</strong><span>Naturaleza y aire libre</span></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <button class="control-carrusel anterior" type="button" aria-label="Foto anterior">‹</button>
+                <button class="control-carrusel siguiente" type="button" aria-label="Foto siguiente">›</button>
+                <div class="indicadores-carrusel" aria-label="Elegir fotografía">
+                    <button type="button" class="indicador activo" aria-label="Mostrar foto 1" aria-current="true"></button>
+                    <button type="button" class="indicador" aria-label="Mostrar foto 2"></button>
+                    <button type="button" class="indicador" aria-label="Mostrar foto 3"></button>
+                    <button type="button" class="indicador" aria-label="Mostrar foto 4"></button>
+                    <button type="button" class="indicador" aria-label="Mostrar foto 5"></button>
+                </div>
+            </div>
+
+            <div class="contenedor-tarjetas">
+
+
+                <!-- FRANCIA -->
+
+                <article class="tarjeta">
+
+                    <img
+                        src="imagenes/Francia.jpg"
+                        alt="Paisaje turístico de Francia"
+                    >
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>París, Francia</h3>
+
+                        <p>
+                            Descubrí la ciudad de la Torre Eiffel,
+                            recorré sus calles y disfrutá de su
+                            arquitectura, cultura y gastronomía.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- JAPÓN -->
+
+                <article class="tarjeta">
+
+                    <img
+                        src="imagenes/Japon.jpg"
+                        alt="Paisaje turístico de Japón"
+                    >
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>Tokio, Japón</h3>
+
+                        <p>
+                            Conocé una ciudad que combina tradición,
+                            tecnología, cultura y una gran variedad
+                            de lugares para descubrir.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ITALIA -->
+
+                <article class="tarjeta">
+
+                    <img
+                        src="imagenes/Italia.jpg"
+                        alt="Paisaje turístico de Italia"
+                    >
+
+                    <div class="contenido-tarjeta">
+
+                        <h3>Roma, Italia</h3>
+
+                        <p>
+                            Recorré una ciudad llena de historia,
+                            monumentos, plazas y arquitectura, y
+                            disfrutá de su reconocida gastronomía.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROMOCIÓN DEL MES -->
+
+        <section id="promociones" class="promocion">
+
+            <h2>Promoción del mes</h2>
+
+            <div class="caja-promocion">
+
+                <h3>✈️ Viajá y disfrutá</h3>
+
+                <p>
+                    Aprovechá nuestra promoción especial del mes:
+                    reservá tu próximo viaje y obtené un
+                    <strong>20% de descuento</strong> en tu paquete turístico.
+                </p>
+
+                <p class="destacado">
+                    ¡No dejes pasar la oportunidad de conocer un nuevo destino!
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- FORMULARIO DE CONSULTA Y RESERVA -->
+        <section id="contacto-formulario" class="seccion-consulta">
+            <div class="encabezado-consulta">
+                <h2>Empezá a planificar tu viaje</h2>
+                <p>Completá el formulario y contanos qué destino te gustaría conocer.</p>
+            </div>
+
+            <form id="formulario-viaje" class="formulario-viaje">
+                <div class="campo-viaje">
+                    <label for="viaje-nombre">Nombre completo *</label>
+                    <input type="text" id="viaje-nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
+                </div>
+                <div class="campo-viaje">
+                    <label for="viaje-email">Correo electrónico *</label>
+                    <input type="email" id="viaje-email" name="email" placeholder="tu@email.com" autocomplete="email" required>
+                </div>
+                <div class="campo-viaje">
+                    <label for="viaje-telefono">Teléfono *</label>
+                    <input type="tel" id="viaje-telefono" name="telefono" placeholder="3547 123456" autocomplete="tel" required>
+                </div>
+                <div class="campo-viaje">
+                    <label for="viaje-destino">Destino de interés *</label>
+                    <select id="viaje-destino" name="destino" required>
+                        <option value="">Elegí un destino</option>
+                        <option>París, Francia</option>
+                        <option>Tokio, Japón</option>
+                        <option>Roma, Italia</option>
+                        <option>Playa</option>
+                        <option>Montaña</option>
+                        <option>Quiero recibir recomendaciones</option>
+                    </select>
+                </div>
+                <div class="campo-viaje">
+                    <label for="viaje-salida">Fecha estimada de salida</label>
+                    <input type="date" id="viaje-salida" name="fecha-salida">
+                </div>
+                <div class="campo-viaje">
+                    <label for="viaje-personas">Cantidad de viajeros *</label>
+                    <select id="viaje-personas" name="personas" required>
+                        <option value="">Seleccioná una opción</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3-4">3 a 4 personas</option>
+                        <option value="5+">5 personas o más</option>
+                    </select>
+                </div>
+                <div class="campo-viaje campo-viaje-completo">
+                    <label for="viaje-mensaje">¿Querés contarnos algo más?</label>
+                    <textarea id="viaje-mensaje" name="mensaje" rows="4" placeholder="Fechas flexibles, tipo de viaje, consultas..."></textarea>
+                </div>
+                <label class="aceptar-viaje">
+                    <input type="checkbox" name="aceptar" required>
+                    <span>Confirmo que los datos ingresados son correctos. *</span>
+                </label>
+                <button type="submit" class="boton-enviar-viaje">Enviar consulta</button>
+                <p id="estado-formulario-viaje" class="estado-formulario-viaje" aria-live="polite"></p>
+                <p class="nota-formulario-viaje">Formulario demostrativo para el proyecto escolar: no envía ni guarda tus datos.</p>
+            </form>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer id="contacto">
+
+        <h2>Contacto</h2>
+
+        <p>
+            📧 Email:
+            <a href="mailto:info@mundoviajes.com">
+                info@mundoviajes.com
+            </a>
+        </p>
+
+        <p>
+            🌎 Redes sociales:
+            Instagram: @mundoviajes
+            | Facebook: Mundo Viajes
+        </p>
+
+        <p class="copyright">
+            © 2026 Mundo Viajes - Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+    <script>
+        // CARRUSEL: permite cambiar entre las fotografías de los destinos.
+        const pistaCarrusel = document.getElementById("pista-carrusel");
+        const diapositivas = document.querySelectorAll(".diapositiva");
+        const indicadores = document.querySelectorAll(".indicador");
+        const botonAnterior = document.querySelector(".control-carrusel.anterior");
+        const botonSiguiente = document.querySelector(".control-carrusel.siguiente");
+        let indiceActual = 0;
+
+        function mostrarDiapositiva(indice) {
+            indiceActual = (indice + diapositivas.length) % diapositivas.length;
+            pistaCarrusel.style.transform = `translateX(-${indiceActual * 100}%)`;
+            diapositivas.forEach((diapositiva, posicion) => {
+                diapositiva.classList.toggle("activa", posicion === indiceActual);
+            });
+            indicadores.forEach((indicador, posicion) => {
+                indicador.classList.toggle("activo", posicion === indiceActual);
+                if (posicion === indiceActual) {
+                    indicador.setAttribute("aria-current", "true");
+                } else {
+                    indicador.removeAttribute("aria-current");
+                }
+            });
+        }
+
+        botonAnterior.addEventListener("click", () => mostrarDiapositiva(indiceActual - 1));
+        botonSiguiente.addEventListener("click", () => mostrarDiapositiva(indiceActual + 1));
+        indicadores.forEach((indicador, posicion) => {
+            indicador.addEventListener("click", () => mostrarDiapositiva(posicion));
+        });
+
+        // FORMULARIO EDUCATIVO: valida los campos y muestra una confirmación local.
+        // No manda datos a un servidor ni los almacena.
+        const formularioViaje = document.getElementById("formulario-viaje");
+        const fechaSalida = document.getElementById("viaje-salida");
+        fechaSalida.min = new Date().toISOString().split("T")[0];
+
+        formularioViaje.addEventListener("submit", (evento) => {
+            evento.preventDefault();
+            if (!formularioViaje.checkValidity()) {
+                formularioViaje.reportValidity();
+                return;
+            }
+            const nombre = document.getElementById("viaje-nombre").value.trim();
+            document.getElementById("estado-formulario-viaje").textContent =
+                `¡Gracias, ${nombre}! La consulta quedó validada en esta demostración. Para recibir una respuesta real, hace falta conectar el formulario a un servicio de envío.`;
+            formularioViaje.reset();
+        });
+    </script>
+</body>
+
+</html>

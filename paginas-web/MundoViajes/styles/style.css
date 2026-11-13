@@ -1,0 +1,516 @@
+/* ------------------------------
+   ESTILOS GENERALES
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f8fa;
+    color: #263238;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+
+header {
+    background-color: #ffffff;
+}
+
+
+/* Imagen principal del header */
+
+.imagen-header {
+    min-height: 430px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 70, 100, 0.35),
+            rgba(0, 40, 70, 0.55)
+        ),
+        url("../imagenes/viaje.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+/* Logo */
+
+.imagen-header img {
+    width: 260px;
+    max-width: 80%;
+    height: auto;
+
+    margin-bottom: 20px;
+}
+
+
+/* Texto del header */
+
+.texto-header {
+    color: #ffffff;
+
+    text-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.texto-header h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.texto-header p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+/* ------------------------------
+   NAVEGACIÓN
+------------------------------ */
+
+nav {
+    background-color: #007c91;
+
+    box-shadow:
+        0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 17px 25px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #f4a340;
+    color: #ffffff;
+}
+
+
+/* ------------------------------
+   SECCIONES GENERALES
+------------------------------ */
+
+section {
+    padding: 75px 8%;
+}
+
+h2 {
+    text-align: center;
+
+    font-family: Georgia, serif;
+
+    font-size: 36px;
+
+    color: #006477;
+
+    margin-bottom: 15px;
+}
+
+
+/* ------------------------------
+   DESTINOS
+------------------------------ */
+
+.destinos {
+    background-color: #f4f8fa;
+}
+
+.introduccion {
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: 0 auto 45px;
+
+    color: #607d86;
+
+    font-size: 18px;
+}
+
+
+/* Contenedor de tarjetas */
+
+.contenedor-tarjetas {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Tarjetas */
+
+.tarjeta {
+    background-color: #ffffff;
+
+    width: 320px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Imágenes de las tarjetas */
+
+.tarjeta img {
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Contenido */
+
+.contenido-tarjeta {
+    padding: 25px;
+}
+
+.contenido-tarjeta h3 {
+    color: #007c91;
+
+    font-family: Georgia, serif;
+
+    font-size: 26px;
+
+    margin-bottom: 12px;
+}
+
+.contenido-tarjeta p {
+    color: #546e75;
+
+    font-size: 15px;
+}
+
+
+/* ------------------------------
+   PROMOCIÓN
+------------------------------ */
+
+.promocion {
+    background-color: #e7f5f7;
+
+    text-align: center;
+}
+
+.caja-promocion {
+    max-width: 800px;
+
+    margin: 35px auto 0;
+
+    background-color: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 40px;
+
+    border: 2px solid #f4a340;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.caja-promocion h3 {
+    color: #007c91;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.caja-promocion p {
+    color: #546e75;
+
+    font-size: 18px;
+}
+
+.caja-promocion strong {
+    color: #e88920;
+
+    font-size: 21px;
+}
+
+.destacado {
+    margin-top: 20px;
+
+    font-weight: bold;
+
+    color: #007c91 !important;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    background-color: #004b5c;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 45px 20px 25px;
+}
+
+footer h2 {
+    color: #ffffff;
+
+    margin-bottom: 25px;
+}
+
+footer p {
+    margin: 10px 0;
+
+    color: #dceff2;
+}
+
+footer a {
+    color: #f4c06a;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 30px !important;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    font-size: 13px;
+
+    color: #a9c8cd !important;
+}
+
+/* ------------------------------
+   CARRUSEL DE DESTINOS
+------------------------------ */
+.carrusel-lugares {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto 55px;
+    padding: 0 58px 35px;
+}
+.carrusel-ventana {
+    overflow: hidden;
+    border-radius: 20px;
+    background: #dbeaf0;
+    box-shadow: 0 12px 30px rgba(0, 60, 90, .16);
+}
+.carrusel-pista {
+    display: flex;
+    transition: transform .45s ease;
+    will-change: transform;
+}
+.diapositiva {
+    position: relative;
+    flex: 0 0 100%;
+    height: 410px;
+    margin: 0;
+    overflow: hidden;
+}
+.diapositiva img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.diapositiva::after {
+    content: "";
+    position: absolute;
+    inset: 35% 0 0;
+    background: linear-gradient(transparent, rgba(0, 27, 45, .82));
+    pointer-events: none;
+}
+.diapositiva figcaption {
+    position: absolute;
+    z-index: 1;
+    left: 28px;
+    right: 28px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: white;
+    text-shadow: 0 2px 7px rgba(0,0,0,.4);
+}
+.diapositiva figcaption strong { font-size: 27px; }
+.diapositiva figcaption span { font-size: 15px; }
+.control-carrusel {
+    position: absolute;
+    top: 43%;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: #fff;
+    color: #006477;
+    box-shadow: 0 4px 16px rgba(0,0,0,.15);
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform .2s, background .2s;
+}
+.control-carrusel:hover { transform: scale(1.08); background: #f4a340; color: #fff; }
+.control-carrusel.anterior { left: 0; }
+.control-carrusel.siguiente { right: 0; }
+.indicadores-carrusel {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+}
+.indicador {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #b8cbd1;
+    cursor: pointer;
+}
+.indicador.activo { background: #007c91; transform: scale(1.2); }
+
+/* ------------------------------
+   FORMULARIO DE CONSULTA DE VIAJES
+------------------------------ */
+.seccion-consulta { background: #eaf4f7; }
+.encabezado-consulta { max-width: 720px; margin: 0 auto 35px; text-align: center; }
+.encabezado-consulta p { color: #607d86; font-size: 17px; }
+.formulario-viaje {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 21px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 28px rgba(0, 60, 90, .09);
+}
+.campo-viaje { display: flex; flex-direction: column; gap: 8px; }
+.campo-viaje label { color: #263238; font-weight: bold; font-size: 15px; }
+.campo-viaje input, .campo-viaje select, .campo-viaje textarea {
+    width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #cbdde2;
+    border-radius: 8px;
+    background: #fbfdfe;
+    color: #263238;
+    font: inherit;
+}
+.campo-viaje input:focus, .campo-viaje select:focus, .campo-viaje textarea:focus {
+    outline: 2px solid #70c8d5;
+    border-color: #007c91;
+}
+.campo-viaje textarea { resize: vertical; }
+.campo-viaje-completo, .aceptar-viaje, .boton-enviar-viaje,
+.estado-formulario-viaje, .nota-formulario-viaje { grid-column: 1 / -1; }
+.aceptar-viaje { display: flex; align-items: flex-start; gap: 10px; color: #52676d; font-size: 14px; }
+.aceptar-viaje input { margin-top: 5px; accent-color: #007c91; }
+.boton-enviar-viaje {
+    justify-self: start;
+    border: 0;
+    border-radius: 8px;
+    padding: 13px 24px;
+    background: #007c91;
+    color: white;
+    font: bold 16px Arial, sans-serif;
+    cursor: pointer;
+    transition: background .2s, transform .2s;
+}
+.boton-enviar-viaje:hover { background: #005f70; transform: translateY(-2px); }
+.estado-formulario-viaje { color: #006477; font-weight: bold; line-height: 1.5; }
+.nota-formulario-viaje { margin-top: -12px; color: #74878c; font-size: 12px; }
+
+/* Reducir elementos en pantallas chicas */
+@media (max-width: 650px) {
+    .carrusel-lugares { padding: 0 0 34px; margin-bottom: 40px; }
+    .diapositiva { height: 300px; }
+    .control-carrusel { top: 42%; width: 38px; height: 38px; font-size: 27px; }
+    .control-carrusel.anterior { left: 10px; }
+    .control-carrusel.siguiente { right: 10px; }
+    .diapositiva figcaption { left: 18px; right: 18px; bottom: 18px; }
+    .diapositiva figcaption strong { font-size: 22px; }
+    .diapositiva figcaption span { font-size: 13px; }
+    .formulario-viaje { grid-template-columns: 1fr; padding: 22px; }
+    .campo-viaje-completo, .aceptar-viaje, .boton-enviar-viaje,
+    .estado-formulario-viaje, .nota-formulario-viaje { grid-column: auto; }
+}

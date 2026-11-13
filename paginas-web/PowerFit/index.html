@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PowerFit | Gimnasio</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         HEADER
+    =============================== -->
+
+    <header id="inicio">
+
+        <div class="logo">
+            <img src="imagenes/logoFit.png" alt="Logo de PowerFit">
+        </div>
+
+        <p class="eslogan">
+            FUERZA. ENERGÍA. SUPERACIÓN.
+        </p>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#clases">Clases</a></li>
+                <li><a href="#entrenadores">Entrenadores</a></li>
+                <li><a href="#inscripcion">Inscribite</a></li>
+                <li><a href="#terminos">Términos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ==============================
+             BIENVENIDA
+        =============================== -->
+
+        <section class="bienvenida">
+
+            <h1>ENTRENÁ. SUPERATE. POWERFIT.</h1>
+
+            <p>
+                Un espacio pensado para ayudarte a alcanzar tus objetivos,
+                mejorar tu rendimiento y disfrutar del entrenamiento.
+            </p>
+
+            <a href="#inscripcion" class="boton-inscripcion">
+                INSCRIBITE AHORA
+            </a>
+
+        </section>
+
+
+        <!-- ==============================
+             CLASES
+        =============================== -->
+
+        <section id="clases" class="clases">
+
+            <h2>Clases disponibles</h2>
+
+            <div class="contenedor-articulos">
+
+
+                <!-- MUSCULACIÓN -->
+
+                <article class="clase">
+
+                    <img
+                        src="imagenes/musculacion.jpg"
+                        alt="Entrenamiento de musculación"
+                        class="imagen-clase"
+                    >
+
+                    <div class="contenido-clase">
+
+                        <h3>Musculación</h3>
+
+                        <p>
+                            Entrenamiento de fuerza para desarrollar y fortalecer
+                            los músculos, adaptado a diferentes niveles.
+                        </p>
+
+                        <p class="profesional">
+                            <strong>Profesional:</strong><br>
+                            Profesor de musculación - Carlos Lopez
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CROSSFIT -->
+
+                <article class="clase">
+
+                    <img
+                        src="imagenes/crossfit.jpg"
+                        alt="Entrenamiento de CrossFit"
+                        class="imagen-clase"
+                    >
+
+                    <div class="contenido-clase">
+
+                        <h3>Crossfit</h3>
+
+                        <p>
+                            Entrenamientos dinámicos que combinan fuerza,
+                            resistencia y ejercicios funcionales.
+                        </p>
+
+                        <p class="profesional">
+                            <strong>Profesional:</strong><br>
+                            Coach de CrossFit - Paulo Fierro
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- YOGA -->
+
+                <article class="clase">
+
+                    <img
+                        src="imagenes/yoga.jpg"
+                        alt="Clase grupal de yoga"
+                        class="imagen-clase"
+                    >
+
+                    <div class="contenido-clase">
+
+                        <h3>Yoga</h3>
+
+                        <p>
+                            Actividad que combina movimiento, respiración y
+                            relajación para mejorar la flexibilidad y el bienestar.
+                        </p>
+
+                        <p class="profesional">
+                            <strong>Profesional:</strong><br>
+                            Instructor/a de Yoga - Victoria Suarez
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             HORARIOS
+        =============================== -->
+
+        <section class="horarios">
+
+            <h2>Horarios</h2>
+
+            <ul>
+                <li>
+                    <strong>Lunes a viernes:</strong>
+                    08:00 - 22:00
+                </li>
+
+                <li>
+                    <strong>Sábados:</strong>
+                    09:00 - 13:00
+                </li>
+
+                <li>
+                    <strong>Musculación:</strong>
+                    08:00 - 22:00
+                </li>
+
+                <li>
+                    <strong>Crossfit:</strong>
+                    18:00 - 20:00
+                </li>
+
+                <li>
+                    <strong>Yoga:</strong>
+                    17:00 - 19:00
+                </li>
+            </ul>
+
+        </section>
+
+
+        <!-- ==============================
+             ENTRENADORES
+        =============================== -->
+
+        <section id="entrenadores" class="entrenadores">
+
+            <h2>Nuestros entrenadores</h2>
+
+            <p>
+                Contamos con un equipo preparado para acompañarte durante
+                tus entrenamientos y ayudarte a alcanzar tus objetivos.
+            </p>
+
+        </section>
+
+
+        <!-- ==============================
+             INSCRIPCIÓN
+        =============================== -->
+
+        <section id="inscripcion" class="inscripcion">
+
+            <h2>Inscribite en PowerFit</h2>
+
+            <p class="descripcion-inscripcion">
+                Completá tus datos para solicitar tu inscripción.
+            </p>
+
+
+            <form class="formulario">
+
+                <!-- DATOS PERSONALES -->
+
+                <div class="grupo-formulario">
+
+                    <label for="nombre">
+                        Nombre completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ingresá tu nombre"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="grupo-formulario">
+
+                    <label for="email">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="ejemplo@gmail.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="grupo-formulario">
+
+                    <label for="telefono">
+                        Teléfono
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="3547-123456"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="grupo-formulario">
+
+                    <label for="edad">
+                        Edad
+                    </label>
+
+                    <input
+                        type="number"
+                        id="edad"
+                        name="edad"
+                        min="1"
+                        max="100"
+                        placeholder="Ingresá tu edad"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- ELECCIÓN DE CLASE -->
+
+                <div class="grupo-formulario">
+
+                    <label for="clase">
+                        Clase de interés
+                    </label>
+
+                    <select id="clase" name="clase" required>
+
+                        <option value="">
+                            Seleccioná una clase
+                        </option>
+
+                        <option value="musculacion">
+                            Musculación
+                        </option>
+
+                        <option value="crossfit">
+                            Crossfit
+                        </option>
+
+                        <option value="yoga">
+                            Yoga
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- MENSAJE -->
+
+                <div class="grupo-formulario">
+
+                    <label for="mensaje">
+                        Comentario
+                    </label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="4"
+                        placeholder="¿Querés contarnos algo?"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- ACEPTAR TÉRMINOS -->
+
+                <div class="aceptar-terminos-formulario">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="aceptar"
+                            name="aceptar"
+                            required
+                        >
+
+                        <span>
+                            Acepto los términos y condiciones y las políticas
+                            de PowerFit.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- BOTÓN -->
+
+                <button
+                    type="submit"
+                    class="boton-enviar"
+                >
+                    ENVIAR INSCRIPCIÓN
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ==============================
+             TÉRMINOS Y CONDICIONES
+        =============================== -->
+
+        <section class="terminos" id="terminos">
+
+            <h2>Términos y condiciones</h2>
+
+            <p class="descripcion-terminos">
+                Información sobre el uso de nuestra página y nuestros servicios.
+            </p>
+
+
+            <div class="terminos-contenedor">
+
+
+                <div class="termino">
+
+                    <h3>1. Información del local</h3>
+
+                    <p>
+                        Las descripciones, horarios e imágenes son de carácter
+                        informativo y pueden estar sujetos a modificaciones.
+                    </p>
+
+                </div>
+
+
+                <div class="termino">
+
+                    <h3>2. Clases</h3>
+
+                    <p>
+                        Las inscripciones realizadas en la página, junto con
+                        los datos personales solicitados, serán enviados
+                        únicamente a la administración del gimnasio.
+                    </p>
+
+                </div>
+
+
+                <div class="termino">
+
+                    <h3>3. Precios</h3>
+
+                    <p>
+                        Los precios indicados corresponden a las clases y
+                        servicios mostrados en la página y pueden cambiar
+                        sin previo aviso.
+                    </p>
+
+                </div>
+
+
+                <div class="termino">
+
+                    <h3>4. Uso de la página</h3>
+
+                    <p>
+                        El contenido de esta página está destinado a brindar
+                        información sobre PowerFit y sus servicios.
+                    </p>
+
+                </div>
+
+
+                <div class="termino">
+
+                    <h3>5. Contacto</h3>
+
+                    <p>
+                        Ante cualquier consulta sobre las clases o servicios,
+                        podés comunicarte con PowerFit a través de los medios
+                        indicados en la sección de contacto.
+                    </p>
+
+                </div>
+
+
+                <!-- CHECKBOX INFORMATIVO -->
+
+                <div class="aceptar-terminos">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            disabled
+                        >
+
+                        <span>
+                            Al realizar una inscripción se deben aceptar
+                            los términos y condiciones.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer id="contacto">
+
+        <h2>Contacto</h2>
+
+        <p>
+            Teléfono: 3547-123456
+        </p>
+
+        <p>
+            Dirección: Av. Principal 456
+        </p>
+
+        <p class="copyright">
+            © 2026 PowerFit - Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

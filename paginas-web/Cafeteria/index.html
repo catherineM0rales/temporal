@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Café Luna</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body id="inicio-pagina">
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div class="contenido-encabezado">
+            <img src="imagenes/logo.png" alt="Logo de Café Luna" class="logo">
+            <h1>Café Luna</h1>
+            <p>Un rincón para disfrutar algo rico</p>
+        </div>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navegacion">
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#registro">Registrate</a>
+        <a href="#carrito">Carrito (<span id="cantidad-carrito">0</span>)</a>
+        <a href="#terminos">Términos y condiciones</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main>
+
+        <!-- AVISO DE ACEPTACIÓN -->
+        <div id="aviso-aceptacion" class="aviso-aceptacion"
+             role="status" aria-live="polite">
+            <span class="icono-aviso" aria-hidden="true">☕</span>
+
+            <p>
+                <strong>¡Antes de comenzar!</strong>
+                <span id="texto-aviso-aceptacion">
+                    Para utilizar Café Luna, primero tenés que leer y aceptar
+                    los términos y condiciones.
+                </span>
+                <a href="#terminos" class="enlace-aviso">
+                    Ir a los términos y condiciones
+                </a>
+            </p>
+        </div>
+
+        <!-- INICIO -->
+        <section id="inicio" class="bienvenida">
+            <div class="texto-bienvenida">
+                <h2>Bienvenidos a Café Luna</h2>
+
+                <p>
+                    Un espacio para disfrutar del aroma del café,
+                    compartir algo rico y tomarse una pausa.
+                </p>
+
+                <a href="#menu" class="boton">Descubrir el menú</a>
+            </div>
+        </section>
+
+        <!-- MENÚ -->
+        <section id="menu" class="seccion">
+            <h2>Nuestro menú</h2>
+
+            <p class="descripcion-seccion">
+                Elegí tus productos favoritos y agregalos al carrito.
+            </p>
+
+            <div class="productos">
+
+                <article class="producto">
+                    <img src="imagenes/cafe.jpg" alt="Taza de café">
+
+                    <div class="contenido-producto">
+                        <h3>Café</h3>
+                        <p>Un clásico para disfrutar en cualquier momento.</p>
+                        <p class="precio">$2.000</p>
+
+                        <button type="button"
+                            class="boton-producto agregar-carrito"
+                            data-id="cafe"
+                            data-nombre="Café"
+                            data-precio="2000">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <img src="imagenes/capuccino.jpg" alt="Taza de capuccino">
+
+                    <div class="contenido-producto">
+                        <h3>Capuccino</h3>
+                        <p>Café con leche espumosa para una pausa especial.</p>
+                        <p class="precio">$2.500</p>
+
+                        <button type="button"
+                            class="boton-producto agregar-carrito"
+                            data-id="capuccino"
+                            data-nombre="Capuccino"
+                            data-precio="2500">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <img src="imagenes/medialunas.jpg" alt="Medialunas">
+
+                    <div class="contenido-producto">
+                        <h3>Medialunas</h3>
+                        <p>Una opción dulce ideal para acompañar tu café.</p>
+                        <p class="precio">$1.200</p>
+
+                        <button type="button"
+                            class="boton-producto agregar-carrito"
+                            data-id="medialunas"
+                            data-nombre="Medialunas"
+                            data-precio="1200">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <img src="imagenes/cheesecake.jpg" alt="Porción de cheesecake">
+
+                    <div class="contenido-producto">
+                        <h3>Cheesecake</h3>
+                        <p>Una porción cremosa para quienes aman lo dulce.</p>
+                        <p class="precio">$3.000</p>
+
+                        <button type="button"
+                            class="boton-producto agregar-carrito"
+                            data-id="cheesecake"
+                            data-nombre="Cheesecake"
+                            data-precio="3000">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <img src="imagenes/cookies.jpg" alt="Galletitas con chocolate">
+
+                    <div class="contenido-producto">
+                        <h3>Cookies</h3>
+                        <p>Galletitas dulces perfectas para acompañar una bebida.</p>
+                        <p class="precio">$1.500</p>
+
+                        <button type="button"
+                            class="boton-producto agregar-carrito"
+                            data-id="cookies"
+                            data-nombre="Cookies"
+                            data-precio="1500">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <img src="imagenes/tostados.jpg" alt="Sándwich tostado">
+
+                    <div class="contenido-producto">
+                        <h3>Tostado</h3>
+                        <p>Una alternativa salada para disfrutar a cualquier hora.</p>
+                        <p class="precio">$2.800</p>
+
+                        <button type="button"
+                            class="boton-producto agregar-carrito"
+                            data-id="tostado"
+                            data-nombre="Tostado"
+                            data-precio="2800">
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="seccion">
+            <h2>Sobre nosotros</h2>
+
+            <p class="texto-centrado">
+                En Café Luna creemos que los pequeños momentos pueden convertirse
+                en grandes recuerdos. Queremos ofrecer un ambiente cálido donde
+                disfrutar de bebidas, productos dulces y opciones saladas.
+            </p>
+        </section>
+
+        <!-- FORMULARIO DE REGISTRO -->
+        <section id="registro" class="seccion seccion-alternativa">
+            <h2>Registrate en Café Luna</h2>
+
+            <p class="descripcion-seccion">
+                Completá tus datos y formá parte de nuestra comunidad.
+            </p>
+
+            <form id="formulario-registro" class="formulario-registro">
+
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ingresá tu nombre"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="contrasena">Contraseña de demostración *</label>
+                    <input type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        minlength="8"
+                        autocomplete="new-password"
+                        required>
+
+                    <small>
+                        Debe tener al menos 8 caracteres.
+                        No uses una contraseña real.
+                    </small>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="edad">Edad *</label>
+                    <input type="number"
+                        id="edad"
+                        name="edad"
+                        min="1"
+                        max="120"
+                        required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="fecha-nacimiento">Fecha de nacimiento *</label>
+                    <input type="date"
+                        id="fecha-nacimiento"
+                        name="fecha-nacimiento"
+                        required>
+                </div>
+
+                <fieldset class="grupo-formulario">
+                    <legend>¿Cómo te identificás? (opcional)</legend>
+
+                    <label class="opcion-formulario">
+                        <input type="radio" name="genero" value="femenino">
+                        Femenino
+                    </label>
+
+                    <label class="opcion-formulario">
+                        <input type="radio" name="genero" value="masculino">
+                        Masculino
+                    </label>
+
+                    <label class="opcion-formulario">
+                        <input type="radio" name="genero" value="otro">
+                        Otro
+                    </label>
+
+                    <label class="opcion-formulario">
+                        <input type="radio" name="genero" value="no-responder">
+                        Prefiero no decirlo
+                    </label>
+                </fieldset>
+
+                <fieldset class="grupo-formulario">
+                    <legend>¿Qué te gusta de nuestra cafetería?</legend>
+
+                    <label class="opcion-formulario">
+                        <input type="checkbox" name="intereses" value="cafe">
+                        Cafés y bebidas
+                    </label>
+
+                    <label class="opcion-formulario">
+                        <input type="checkbox" name="intereses" value="dulces">
+                        Productos dulces
+                    </label>
+
+                    <label class="opcion-formulario">
+                        <input type="checkbox" name="intereses" value="salados">
+                        Opciones saladas
+                    </label>
+                </fieldset>
+
+                <div class="campo-formulario">
+                    <label for="pais">País *</label>
+
+                    <select id="pais" name="pais" required>
+                        <option value="">Seleccioná tu país</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="aceptacion-formulario">
+                    <label class="opcion-formulario">
+                        <input type="checkbox"
+                            id="aceptar-registro"
+                            name="aceptar-registro"
+                            required>
+
+                        <span>
+                            Acepto participar en esta demostración y declaro
+                            haber leído los
+                            <a href="#terminos">términos y condiciones</a>.
+                        </span>
+                    </label>
+                </div>
+
+                <button type="submit" class="boton">
+                    Registrarme
+                </button>
+
+                <p id="mensaje-registro"
+                    class="mensaje-estado"
+                    aria-live="polite"></p>
+
+                <p class="nota">
+                    Formulario educativo: no crea cuentas ni envía o guarda tus datos.
+                </p>
+            </form>
+        </section>
+
+        <!-- CARRITO -->
+        <section id="carrito" class="seccion">
+            <h2>Tu carrito</h2>
+
+            <p class="descripcion-seccion">
+                Revisá los productos que seleccionaste.
+            </p>
+
+            <div id="carrito-vacio" class="mensaje-carrito">
+                Todavía no agregaste productos al carrito.
+            </div>
+
+            <div id="lista-carrito" class="lista-carrito"></div>
+
+            <div class="resumen-carrito">
+                <p>Total: <strong id="total-carrito">$0</strong></p>
+
+                <div class="acciones-carrito">
+                    <button type="button"
+                        id="vaciar-carrito"
+                        class="boton-secundario">
+                        Vaciar carrito
+                    </button>
+
+                    <button type="button"
+                        id="preparar-pedido"
+                        class="boton">
+                        Preparar pedido
+                    </button>
+                </div>
+
+                <p id="mensaje-pedido"
+                    class="mensaje-estado"
+                    aria-live="polite"></p>
+
+                <p class="nota">
+                    Esta es una demostración escolar. El carrito no envía pedidos
+                    reales ni procesa pagos.
+                </p>
+            </div>
+        </section>
+
+        <!-- TÉRMINOS Y CONDICIONES -->
+        <section id="terminos" class="seccion">
+            <h2>Términos y condiciones</h2>
+
+            <p class="descripcion-seccion">
+                Información sobre el uso de la página de Café Luna.
+            </p>
+
+            <div class="texto-terminos">
+                <p>
+                    Este sitio corresponde a Café Luna, una cafetería ficticia
+                    creada con fines educativos. Para este ejemplo, el negocio
+                    se encuentra ubicado en Av. Belgrano 125, Alta Gracia,
+                    Córdoba, Argentina. El nombre comercial es Café Luna y los
+                    datos de contacto son contacto@cafeluna.com.ar y
+                    (03547) 42-1234. Estos datos son ilustrativos y no
+                    corresponden necesariamente a un negocio real.
+                </p>
+
+                <p>
+                    La página presenta bebidas y alimentos de manera informativa.
+                    Las imágenes y descripciones son ilustrativas y pueden no
+                    representar exactamente el producto final. Los precios
+                    publicados son de ejemplo y, en una actividad comercial real,
+                    se deberá informar el precio final y las condiciones de pago
+                    antes de confirmar una compra. Esta página no procesa pagos
+                    ni envía pedidos reales.
+                </p>
+
+                <p>
+                    En una operación comercial real, los cambios, devoluciones
+                    y cancelaciones se gestionarán de acuerdo con las condiciones
+                    informadas al cliente y la normativa de defensa del consumidor
+                    que resulte aplicable. Los textos, el diseño y los elementos
+                    propios del sitio deben utilizarse respetando los derechos
+                    de sus titulares. Las imágenes de terceros pueden estar
+                    sujetas a sus propias licencias y condiciones de uso.
+                </p>
+
+                <p>
+                    Las personas que utilicen el sitio deben hacerlo de manera
+                    respetuosa y legal, sin intentar dañar, alterar o interferir
+                    con su funcionamiento. Se procura mantener la información
+                    clara y actualizada, aunque los productos, precios y datos
+                    de este proyecto son ilustrativos. Estas condiciones no
+                    pretenden eliminar ni limitar los derechos que las normas
+                    vigentes reconocen a los consumidores.
+                </p>
+
+                <p>
+                    Esta versión no cuenta con un servidor que guarde los datos
+                    ingresados por los usuarios. El carrito funciona temporalmente
+                    en el navegador. Si en el futuro se recopilan datos personales,
+                    se deberá informar para qué se utilizan, cómo se protegen y
+                    qué derechos tienen sus titulares, de acuerdo con la normativa
+                    aplicable, incluida la Ley argentina 25.326 de Protección de
+                    los Datos Personales.
+                </p>
+
+                <p>
+                    Café Luna podrá actualizar la información del sitio y estas
+                    condiciones cuando sea necesario, respetando la normativa
+                    vigente. Para una actividad comercial real, se aplicarán las
+                    leyes y normas correspondientes en Argentina, incluidas las
+                    disposiciones de defensa del consumidor y protección de datos
+                    personales. Este texto tiene fines educativos y deberá
+                    adaptarse antes de utilizarse en un negocio real.
+                </p>
+            </div>
+
+            <div class="aceptacion-terminos">
+                <label class="casilla-terminos">
+                    <input type="checkbox" id="aceptar-terminos">
+                    <span>He leído y acepto los términos y condiciones.</span>
+                </label>
+
+                <button type="button"
+                    id="boton-aceptar"
+                    class="boton">
+                    Aceptar términos
+                </button>
+
+                <!-- NUEVO BOTÓN PARA VOLVER ARRIBA -->
+                <a href="#inicio-pagina"
+                    class="boton boton-volver-inicio">
+                    ↑ Volver al inicio
+                </a>
+
+                <p id="mensaje-terminos"
+                    class="mensaje-estado"
+                    aria-live="polite"></p>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="seccion seccion-alternativa">
+            <h2>Contacto</h2>
+
+            <p class="texto-centrado">
+                ¡Nos encanta compartir buenos momentos con vos!
+                Podés encontrarnos en nuestros medios de contacto.
+            </p>
+
+            <div class="datos-contacto">
+                <p><strong>Nombre:</strong> Café Luna</p>
+
+                <p>
+                    <strong>Dirección:</strong>
+                    Av. Belgrano 125, Alta Gracia, Córdoba, Argentina
+                </p>
+
+                <p><strong>Teléfono:</strong> (03547) 42-1234</p>
+                <p><strong>Correo:</strong> contacto@cafeluna.com.ar</p>
+                <p><strong>Instagram:</strong> @cafeluna</p>
+                <p><strong>Horario:</strong> Lunes a sábados, de 8:00 a 20:00</p>
+            </div>
+
+            <p class="texto-centrado">
+                Los datos de contacto y horarios son ficticios y se incluyen
+                únicamente con fines educativos.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina">
+        <p>&copy; 2026 Café Luna. Proyecto educativo.</p>
+        <p>Un rincón para disfrutar algo rico.</p>
+        <a href="#terminos">Leer términos y condiciones</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,689 @@
+/* ------------------------------
+   ESTILOS GENERALES
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #101010;
+    color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ------------------------------
+   HEADER
+------------------------------ */
+
+header {
+    background-image:
+        linear-gradient(
+            rgba(16, 16, 16, 0.65),
+            rgba(16, 16, 16, 0.65)
+        ),
+        url("../imagenes/gimnasio.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 25px 40px 0;
+
+    border-bottom: 2px solid #b6ff00;
+
+    text-align: center;
+}
+
+
+.logo img {
+    width: 280px;
+    max-width: 80%;
+    height: auto;
+
+    display: block;
+    margin: 0 auto;
+}
+
+
+.eslogan {
+    color: #b6ff00;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin: 5px 0 22px;
+}
+
+
+/* ------------------------------
+   NAVEGACIÓN
+------------------------------ */
+
+nav {
+    background-color: #181818;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 18px 25px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #b6ff00;
+
+    color: #101010;
+}
+
+
+/* ------------------------------
+   BIENVENIDA
+------------------------------ */
+
+.bienvenida {
+    text-align: center;
+
+    padding: 90px 20px;
+
+    background: linear-gradient(
+        rgba(16, 16, 16, 0.9),
+        rgba(16, 16, 16, 0.9)
+    );
+}
+
+
+.bienvenida h1 {
+    font-family: Impact, "Arial Black", sans-serif;
+
+    font-size: 48px;
+
+    letter-spacing: 2px;
+
+    color: #b6ff00;
+
+    margin-bottom: 20px;
+}
+
+
+.bienvenida p {
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+
+    color: #cccccc;
+
+    font-size: 18px;
+}
+
+
+/* ------------------------------
+   BOTÓN DE INSCRIPCIÓN
+------------------------------ */
+
+.boton-inscripcion {
+    display: inline-block;
+
+    background-color: #b6ff00;
+
+    color: #101010;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 13px 25px;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+
+.boton-inscripcion:hover {
+    background-color: #ffffff;
+
+    transform: scale(1.05);
+}
+
+
+/* ------------------------------
+   TÍTULOS DE SECCIÓN
+------------------------------ */
+
+h2 {
+    text-align: center;
+
+    font-family: "Arial Black", Arial, sans-serif;
+
+    font-size: 32px;
+
+    margin-bottom: 40px;
+
+    color: #ffffff;
+}
+
+
+/* ------------------------------
+   CLASES
+------------------------------ */
+
+.clases {
+    padding: 70px 8%;
+}
+
+
+.contenedor-articulos {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.clase {
+    background-color: #1b1b1b;
+
+    border: 2px solid #333333;
+
+    border-radius: 10px;
+
+    width: 300px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+
+.clase:hover {
+    border-color: #b6ff00;
+
+    transform: translateY(-7px);
+}
+
+
+/* IMÁGENES */
+
+.imagen-clase {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* CONTENIDO */
+
+.contenido-clase {
+    padding: 25px;
+}
+
+
+.clase h3 {
+    color: #b6ff00;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+
+.clase p {
+    color: #cccccc;
+}
+
+
+.profesional {
+    margin-top: 18px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #333333;
+
+    font-size: 14px;
+}
+
+
+.profesional strong {
+    color: #b6ff00;
+}
+
+
+/* ------------------------------
+   HORARIOS
+------------------------------ */
+
+.horarios {
+    background-color: #181818;
+
+    padding: 70px 20px;
+}
+
+
+.horarios ul {
+    list-style: none;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+}
+
+
+.horarios li {
+    background-color: #222222;
+
+    border-left: 4px solid #b6ff00;
+
+    padding: 15px 20px;
+
+    margin-bottom: 12px;
+
+    color: #dddddd;
+}
+
+
+.horarios strong {
+    color: #ffffff;
+}
+
+
+/* ------------------------------
+   ENTRENADORES
+------------------------------ */
+
+.entrenadores {
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+
+.entrenadores p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #cccccc;
+
+    font-size: 17px;
+}
+
+
+/* ------------------------------
+   INSCRIPCIÓN
+------------------------------ */
+
+.inscripcion {
+    background-color: #181818;
+
+    padding: 70px 20px;
+}
+
+
+.inscripcion h2 {
+    margin-bottom: 10px;
+}
+
+
+.descripcion-inscripcion {
+    text-align: center;
+
+    color: #999999;
+
+    font-size: 15px;
+
+    margin-bottom: 35px;
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    background-color: #1b1b1b;
+
+    border: 1px solid #333333;
+
+    border-radius: 10px;
+
+    padding: 35px;
+}
+
+
+/* CAMPOS */
+
+.grupo-formulario {
+    margin-bottom: 20px;
+}
+
+
+.grupo-formulario label {
+    display: block;
+
+    color: #b6ff00;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    background-color: #101010;
+
+    border: 1px solid #444444;
+
+    border-radius: 5px;
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.grupo-formulario input:focus,
+.grupo-formulario select:focus,
+.grupo-formulario textarea:focus {
+    border-color: #b6ff00;
+}
+
+
+.grupo-formulario textarea {
+    resize: vertical;
+}
+
+
+/* ------------------------------
+   ACEPTAR TÉRMINOS DEL FORMULARIO
+------------------------------ */
+
+.aceptar-terminos-formulario {
+    margin-top: 25px;
+
+    padding: 18px;
+
+    background-color: #151515;
+
+    border: 1px solid #333333;
+
+    border-radius: 6px;
+}
+
+
+.aceptar-terminos-formulario label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #cccccc;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+.aceptar-terminos-formulario input {
+    width: 17px;
+
+    height: 17px;
+
+    accent-color: #b6ff00;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+
+/* ------------------------------
+   BOTÓN ENVIAR
+------------------------------ */
+
+.boton-enviar {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    background-color: #b6ff00;
+
+    color: #101010;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.boton-enviar:hover {
+    background-color: #ffffff;
+}
+
+
+/* ------------------------------
+   TÉRMINOS Y CONDICIONES
+------------------------------ */
+
+.terminos {
+    background-color: #141414;
+
+    padding: 70px 8%;
+
+    border-top: 1px solid #292929;
+}
+
+
+.terminos h2 {
+    color: #ffffff;
+
+    margin-bottom: 10px;
+}
+
+
+.terminos h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+
+    height: 3px;
+
+    background-color: #b6ff00;
+
+    margin: 12px auto 15px;
+}
+
+
+.descripcion-terminos {
+    text-align: center;
+
+    color: #999999;
+
+    font-size: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.terminos-contenedor {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    background-color: #1b1b1b;
+
+    border: 1px solid #333333;
+
+    border-radius: 10px;
+
+    padding: 10px 30px;
+}
+
+
+.termino {
+    padding: 18px 5px;
+
+    border-bottom: 1px solid #333333;
+}
+
+
+.termino:last-of-type {
+    border-bottom: none;
+}
+
+
+.termino h3 {
+    color: #b6ff00;
+
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+
+
+.termino p {
+    color: #bbbbbb;
+
+    font-size: 14px;
+}
+
+
+/* CHECKBOX INFORMATIVO */
+
+.aceptar-terminos {
+    margin-top: 20px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #333333;
+
+    text-align: center;
+}
+
+
+.aceptar-terminos label {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #cccccc;
+
+    font-size: 14px;
+}
+
+
+.aceptar-terminos input {
+    width: 16px;
+
+    height: 16px;
+
+    accent-color: #b6ff00;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    background-color: #0a0a0a;
+
+    border-top: 2px solid #b6ff00;
+
+    text-align: center;
+
+    padding: 40px 20px 25px;
+}
+
+
+footer h2 {
+    color: #b6ff00;
+
+    margin-bottom: 20px;
+}
+
+
+footer p {
+    color: #cccccc;
+
+    margin: 8px 0;
+}
+
+
+footer .copyright {
+    margin-top: 25px;
+
+    font-size: 13px;
+
+    color: #777777;
+}

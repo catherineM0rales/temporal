@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TecnoStore: descubrí notebooks, celulares y accesorios tecnológicos.">
+    <title>TecnoStore | Tecnología que te lleva más lejos</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <a href="#inicio" class="logo" aria-label="TecnoStore, ir al inicio">
+            <span class="logo-icono">T</span>
+            <span>Tecno<span class="logo-destacado">Store</span></span>
+        </a>
+
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <a href="#carrito" class="boton-carrito">
+            <span aria-hidden="true">🛒</span>
+            Carrito
+            <span id="cantidad-carrito" class="contador-carrito">0</span>
+        </a>
+    </header>
+
+    <main>
+        <!-- PORTADA -->
+        <section class="portada" id="inicio">
+            <div class="portada-contenido">
+                <span class="etiqueta-superior">TECNOLOGÍA PARA TU DÍA A DÍA</span>
+                <h1>Tecnología que te lleva <span>más lejos</span></h1>
+                <p>
+                    Descubrí productos que combinan innovación, diseño
+                    y rendimiento para acompañarte en cada momento.
+                </p>
+
+                <div class="portada-botones">
+                    <a href="#productos" class="boton boton-principal">Ver productos</a>
+                    <a href="#ofertas" class="boton boton-secundario">Descubrir ofertas</a>
+                </div>
+
+                <div class="portada-datos">
+                    <div>
+                        <strong>Calidad</strong>
+                        <span>Productos seleccionados</span>
+                    </div>
+                    <div>
+                        <strong>Atención</strong>
+                        <span>Estamos para ayudarte</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portada-imagen">
+                <img
+                    src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=85"
+                    alt="Computadora portátil sobre un escritorio"
+                >
+                <div class="tarjeta-flotante">
+                    <span class="tarjeta-flotante-icono">✦</span>
+                    <div>
+                        <strong>Tu próximo equipo</strong>
+                        <span>Está en TecnoStore</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="beneficios" aria-label="Beneficios de TecnoStore">
+            <article class="beneficio">
+                <span class="beneficio-icono">✓</span>
+                <div>
+                    <h3>Calidad seleccionada</h3>
+                    <p>Productos pensados para vos.</p>
+                </div>
+            </article>
+
+            <article class="beneficio">
+                <span class="beneficio-icono">◇</span>
+                <div>
+                    <h3>Diseño e innovación</h3>
+                    <p>Tecnología para cada necesidad.</p>
+                </div>
+            </article>
+
+            <article class="beneficio">
+                <span class="beneficio-icono">♡</span>
+                <div>
+                    <h3>Atención personalizada</h3>
+                    <p>Te ayudamos a elegir.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section class="seccion-productos seccion" id="productos">
+            <div class="titulo-seccion">
+                <div>
+                    <span class="etiqueta-superior">NUESTRO CATÁLOGO</span>
+                    <h2>Encontrá tu próximo <span>favorito</span></h2>
+                    <p>Productos tecnológicos para trabajar, estudiar y disfrutar.</p>
+                </div>
+            </div>
+
+            <div class="productos-grilla">
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <span class="producto-etiqueta">Destacado</span>
+                        <img
+                            src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=80"
+                            alt="Notebook de diseño moderno"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="producto-contenido">
+                        <span class="producto-categoria">Computación</span>
+                        <h3>Notebook Pro 15</h3>
+                        <p>Rendimiento y comodidad para tus proyectos.</p>
+                        <div class="producto-pie">
+                            <strong class="precio">$999.000</strong>
+                            <button class="boton-agregar" type="button" data-id="notebook">
+                                Agregar +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <span class="producto-etiqueta etiqueta-nueva">Novedad</span>
+                        <img
+                            src="https://images.unsplash.com/photo-1766503206606-27de0861e8a4?fm=jpg&auto=format&fit=crop&w=700&q=80"
+                            alt="Teléfono inteligente"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="producto-contenido">
+                        <span class="producto-categoria">Telefonía</span>
+                        <h3>Smartphone X12</h3>
+                        <p>Conectividad y practicidad en todo momento.</p>
+                        <div class="producto-pie">
+                            <strong class="precio">$650.000</strong>
+                            <button class="boton-agregar" type="button" data-id="smartphone">
+                                Agregar +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <img
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80"
+                            alt="Auriculares modernos"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="producto-contenido">
+                        <span class="producto-categoria">Audio</span>
+                        <h3>Auriculares Wave</h3>
+                        <p>Disfrutá tu música con comodidad.</p>
+                        <div class="producto-pie">
+                            <strong class="precio">$85.000</strong>
+                            <button class="boton-agregar" type="button" data-id="auriculares">
+                                Agregar +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="producto-imagen">
+                        <img
+                            src="https://images.unsplash.com/photo-1656711081969-9d16ebc2d210?auto=format&fit=crop&w=700&q=80"
+                            alt="Teclado para computadora"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="producto-contenido">
+                        <span class="producto-categoria">Accesorios</span>
+                        <h3>Teclado Mech K1</h3>
+                        <p>Una experiencia cómoda para escribir y jugar.</p>
+                        <div class="producto-pie">
+                            <strong class="precio">$72.000</strong>
+                            <button class="boton-agregar" type="button" data-id="teclado">
+                                Agregar +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- OFERTA -->
+        <section class="oferta seccion" id="ofertas">
+            <div class="oferta-imagen">
+                <img
+                    src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=1000&q=85"
+                    alt="Notebook sobre un escritorio"
+                    loading="lazy"
+                >
+                <span class="oferta-descuento">20% OFF</span>
+            </div>
+
+            <div class="oferta-contenido">
+                <span class="etiqueta-superior">OPORTUNIDAD DESTACADA</span>
+                <h2>Un nuevo impulso para tus ideas</h2>
+                <p>
+                    La Notebook Pro 15 es una gran compañera para estudiar,
+                    trabajar y desarrollar tus proyectos.
+                </p>
+                <div class="oferta-precio">
+                    <strong>$999.000</strong>
+                    <span>Precio de demostración</span>
+                </div>
+                <button class="boton boton-principal" type="button" data-id="notebook">
+                    Agregar al carrito
+                </button>
+            </div>
+        </section>
+
+        <!-- CARRITO -->
+        <section class="seccion carrito-seccion" id="carrito">
+            <div class="titulo-seccion">
+                <div>
+                    <span class="etiqueta-superior">TU SELECCIÓN</span>
+                    <h2>Tu carrito de <span>compras</span></h2>
+                    <p>Revisá los productos que elegiste antes de continuar.</p>
+                </div>
+            </div>
+
+            <div class="carrito-panel">
+                <div id="carrito-vacio" class="carrito-vacio">
+                    <span class="carrito-vacio-icono">🛒</span>
+                    <h3>Tu carrito está vacío</h3>
+                    <p>Agregá algún producto del catálogo para comenzar.</p>
+                    <a href="#productos" class="boton boton-secundario">Ver productos</a>
+                </div>
+
+                <div id="listado-carrito" class="listado-carrito" aria-live="polite"></div>
+
+                <div id="resumen-carrito" class="resumen-carrito" hidden>
+                    <div class="resumen-linea">
+                        <span>Subtotal</span>
+                        <strong id="subtotal-carrito">$0</strong>
+                    </div>
+                    <div class="resumen-linea">
+                        <span>Entrega</span>
+                        <strong>A coordinar</strong>
+                    </div>
+                    <div class="resumen-linea resumen-total">
+                        <span>Total</span>
+                        <strong id="total-carrito">$0</strong>
+                    </div>
+
+                    <div class="carrito-acciones">
+                        <button id="vaciar-carrito" class="boton boton-secundario" type="button">
+                            Vaciar carrito
+                        </button>
+                        <a href="#finalizar-compra" class="boton boton-principal">
+                            Continuar con la compra
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINALIZAR COMPRA -->
+        <section class="seccion compra-seccion" id="finalizar-compra">
+            <div class="titulo-seccion">
+                <div>
+                    <span class="etiqueta-superior">ÚLTIMO PASO</span>
+                    <h2>Datos para tu <span>compra</span></h2>
+                    <p>Completá tus datos para probar el proceso de compra.</p>
+                </div>
+            </div>
+
+            <form id="formulario-pedido" class="formulario-panel">
+                <div class="formulario-intro">
+                    <h3>Información de contacto</h3>
+                    <p>Los campos marcados con * son obligatorios.</p>
+                </div>
+
+                <div class="formulario-grilla">
+                    <div class="campo">
+                        <label for="nombre">Nombre *</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Tu nombre"
+                            autocomplete="given-name"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="apellido">Apellido *</label>
+                        <input
+                            type="text"
+                            id="apellido"
+                            name="apellido"
+                            placeholder="Tu apellido"
+                            autocomplete="family-name"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo electrónico *</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="ejemplo@correo.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefono">Número de celular *</label>
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="Solo números"
+                            inputmode="numeric"
+                            autocomplete="tel-national"
+                            pattern="[0-9]{8,15}"
+                            minlength="8"
+                            maxlength="15"
+                            title="Ingresá entre 8 y 15 números, sin espacios ni símbolos."
+                            aria-describedby="ayuda-telefono"
+                            required
+                        >
+                        <small id="ayuda-telefono">Ingresá entre 8 y 15 números, sin espacios ni símbolos.</small>
+                    </div>
+
+                    <div class="campo campo-completo">
+                        <label for="direccion">Dirección *</label>
+                        <input
+                            type="text"
+                            id="direccion"
+                            name="direccion"
+                            placeholder="Calle, número y localidad"
+                            autocomplete="street-address"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo campo-completo">
+                        <label for="comentarios">Comentarios (opcional)</label>
+                        <textarea
+                            id="comentarios"
+                            name="comentarios"
+                            rows="3"
+                            placeholder="¿Querés agregar alguna indicación?"
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div class="terminos-contenedor">
+                    <label class="terminos-etiqueta" for="aceptar-terminos">
+                        <input type="checkbox" id="aceptar-terminos" name="aceptar-terminos" required>
+                        <span>
+                            Leí y acepto los
+                            <a href="#terminos" id="enlace-terminos">términos y condiciones</a>.
+                        </span>
+                    </label>
+                    <p id="mensaje-terminos" class="mensaje-terminos" role="alert" hidden>
+                        Para continuar, tenés que aceptar los términos y condiciones.
+                    </p>
+                </div>
+
+                <div class="aviso-demostracion">
+                    <strong>Importante:</strong>
+                    este sitio es una demostración educativa. No se realiza ningún cobro
+                    ni se envían los datos a un servidor.
+                </div>
+
+                <button type="submit" class="boton boton-principal boton-finalizar">
+                    Finalizar compra de demostración
+                </button>
+            </form>
+        </section>
+
+        <!-- TÉRMINOS Y CONDICIONES -->
+        <section class="seccion terminos-seccion" id="terminos">
+            <div class="terminos-panel">
+                <span class="etiqueta-superior">INFORMACIÓN IMPORTANTE</span>
+                <h2>Términos y condiciones</h2>
+
+                <div class="terminos-texto">
+                    <h3>1. Uso del sitio</h3>
+                    <p>
+                        TecnoStore es un proyecto educativo creado para demostrar
+                        el funcionamiento de una tienda en línea.
+                    </p>
+
+                    <h3>2. Productos y precios</h3>
+                    <p>
+                        Los productos, imágenes y precios publicados son ilustrativos
+                        y se utilizan únicamente para esta demostración.
+                    </p>
+
+                    <h3>3. Compras y pagos</h3>
+                    <p>
+                        No se procesan pagos reales, no se confirma una venta real
+                        y no se generan números ni códigos de pedido.
+                    </p>
+
+                    <h3>4. Datos personales</h3>
+                    <p>
+                        Los datos ingresados en el formulario se utilizan únicamente
+                        para demostrar la validación del sitio. Esta página no los
+                        envía a un servidor ni los almacena de forma permanente.
+                    </p>
+
+                    <h3>5. Aceptación</h3>
+                    <p>
+                        Para probar el formulario de compra, la persona usuaria
+                        debe marcar la casilla de aceptación de estos términos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENCUESTA DE SATISFACCIÓN -->
+        <section class="seccion encuesta-seccion" id="encuesta">
+            <div class="titulo-seccion">
+                <div>
+                    <span class="etiqueta-superior">QUEREMOS CONOCER TU OPINIÓN</span>
+                    <h2>¿Cómo fue tu <span>experiencia?</span></h2>
+                    <p>Tu opinión nos ayuda a mejorar esta demostración.</p>
+                </div>
+            </div>
+
+            <form id="formulario-encuesta" class="formulario-panel">
+                <div class="campo">
+                    <label for="calificacion">¿Qué tan satisfecho estás con la página? *</label>
+                    <select id="calificacion" name="calificacion" required>
+                        <option value="">Seleccioná una opción</option>
+                        <option value="5">5 - Excelente</option>
+                        <option value="4">4 - Muy buena</option>
+                        <option value="3">3 - Buena</option>
+                        <option value="2">2 - Regular</option>
+                        <option value="1">1 - Puede mejorar</option>
+                    </select>
+                </div>
+
+                <fieldset class="campo campo-preferencias">
+                    <legend>¿Qué sección te gustó más?</legend>
+                    <label class="opcion-radio">
+                        <input type="radio" name="seccion-favorita" value="Productos">
+                        <span>Productos</span>
+                    </label>
+                    <label class="opcion-radio">
+                        <input type="radio" name="seccion-favorita" value="Ofertas">
+                        <span>Ofertas</span>
+                    </label>
+                    <label class="opcion-radio">
+                        <input type="radio" name="seccion-favorita" value="Carrito">
+                        <span>Carrito</span>
+                    </label>
+                    <label class="opcion-radio">
+                        <input type="radio" name="seccion-favorita" value="Diseño">
+                        <span>Diseño</span>
+                    </label>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="opinion">¿Querés dejarnos algún comentario?</label>
+                    <textarea
+                        id="opinion"
+                        name="opinion"
+                        rows="4"
+                        placeholder="Escribí tu opinión acá..."
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="boton boton-principal">
+                    Enviar opinión
+                </button>
+                <p class="nota-encuesta">
+                    La encuesta es demostrativa: las respuestas no se envían ni se guardan.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina" id="contacto">
+        <div class="pie-contenido">
+            <div class="pie-marca">
+                <a href="#inicio" class="logo">
+                    <span class="logo-icono">T</span>
+                    <span>Tecno<span class="logo-destacado">Store</span></span>
+                </a>
+                <p>Tecnología que te lleva más lejos.</p>
+            </div>
+
+            <div class="pie-contacto">
+                <h3>Contacto</h3>
+                <p>Correo: contacto@tecnostore.com</p>
+                <p>Alta Gracia, Córdoba, Argentina</p>
+            </div>
+
+            <div class="pie-enlaces">
+                <h3>Enlaces</h3>
+                <a href="#productos">Productos</a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#terminos">Términos y condiciones</a>
+                <a href="#encuesta">Encuesta de satisfacción</a>
+            </div>
+        </div>
+
+        <div class="pie-final">
+            <p>© 2026 TecnoStore. Proyecto educativo de demostración.</p>
+        </div>
+    </footer>
+
+    <!-- AVISOS EMERGENTES -->
+    <div id="aviso-emergente" class="aviso-emergente" role="status" aria-live="polite"></div>
+
+    <!-- VENTANA DE CONFIRMACIÓN -->
+    <div id="ventana-confirmacion" class="fondo-modal" hidden>
+        <section class="modal" role="dialog" aria-modal="true" aria-labelledby="titulo-confirmacion">
+            <button id="cerrar-modal" class="cerrar-modal" type="button" aria-label="Cerrar ventana">×</button>
+            <div class="modal-icono">✓</div>
+            <h2 id="titulo-confirmacion">¡Prueba completada!</h2>
+            <p id="texto-confirmacion">
+                La demostración del proceso de compra finalizó correctamente.
+            </p>
+            <p class="modal-aclaracion">
+                No se realizó ningún pago ni se enviaron tus datos.
+            </p>
+            <button id="aceptar-modal" class="boton boton-principal" type="button">
+                Aceptar
+            </button>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+﻿numero_pedido;fecha;cliente;correo;detalle;total;estado
+PED-0004;13/11/2026 00:32:00;lola;coco@gmail.com;Café x1 ($2.000 c/u) = $2.000 | Capuccino x1 ($2.500 c/u) = $2.500;$4.500;Pendiente
